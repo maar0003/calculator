@@ -7,6 +7,11 @@ public class OperationDto implements Serializable {
     BigDecimal firstNumber;
     BigDecimal secondNumber;
 
+    public OperationDto(BigDecimal firstNumber, BigDecimal secondnumber) {
+        this.firstNumber = firstNumber;
+        this.secondNumber = secondnumber;
+    }
+
     public BigDecimal getFirstNumber() {
         return firstNumber;
     }

@@ -25,9 +25,9 @@ public class CalculatorController {
     @PostMapping(value="/add")
     @ApiOperation(value="Operación de suma")
     public ResponseEntity<ResultDto> addOperation(@RequestBody final OperationDto operDto){
-        log.debug("OperationDto add operation ", operDto.toString());
         ResultDto resultDTO = null;
         if(operDto != null){
+            log.debug("OperationDto add operation ", operDto.toString());
             resultDTO = calculatorService.addOperation(operDto);
             return ResponseEntity.ok(resultDTO);
         }
@@ -37,9 +37,9 @@ public class CalculatorController {
     @PostMapping(value="/subtract")
     @ApiOperation(value="Operación de resta")
     public ResponseEntity<ResultDto> subtractOperation(@RequestBody final OperationDto operDto){
-        log.debug("OperationDto subtract operation ", operDto.toString());
         ResultDto resultDTO = null;
         if(operDto != null){
+            log.debug("OperationDto subtract operation ", operDto.toString());
             resultDTO = calculatorService.subtractOperation(operDto);
             return ResponseEntity.ok(resultDTO);
         }
