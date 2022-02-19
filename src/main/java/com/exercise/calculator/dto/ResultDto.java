@@ -1,21 +1,20 @@
 package com.exercise.calculator.dto;
 
-public class ResultDto{
-    private long result;
+import java.io.Serializable;
+import java.math.BigDecimal;
 
-    public ResultDto() {
-        result = Long.parseLong(null);
-    }
+public class ResultDto implements Serializable {
+    private BigDecimal result;
 
-    public ResultDto(long result) {
+    public ResultDto(BigDecimal result) {
         this.result = result;
     }
 
-    public long getResult() {
+    public BigDecimal getResult() {
         return result;
     }
 
-    public void setResult(long result) {
+    public void setResult(BigDecimal result) {
         this.result = result;
     }
 

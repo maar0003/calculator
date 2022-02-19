@@ -4,7 +4,7 @@ import com.exercise.calculator.dto.OperationDto;
 import com.exercise.calculator.dto.ResultDto;
 
 public interface CalculatorService {
-    public ResultDto addOperation(OperationDto operDto);
 
-    public ResultDto subtractOperation(OperationDto operDto);
+    ResultDto addOperation(OperationDto operDto);
+    ResultDto subtractOperation(OperationDto operDto);
 }

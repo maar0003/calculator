@@ -1,22 +1,25 @@
 package com.exercise.calculator.dto;
 
-public class OperationDto {
-    long firstNumber;
-    long secondNumber;
+import java.io.Serializable;
+import java.math.BigDecimal;
 
-    public long getFirstNumber() {
+public class OperationDto implements Serializable {
+    BigDecimal firstNumber;
+    BigDecimal secondNumber;
+
+    public BigDecimal getFirstNumber() {
         return firstNumber;
     }
 
-    public void setFirstNumber(long firstNumber) {
+    public void setFirstNumber(BigDecimal firstNumber) {
         this.firstNumber = firstNumber;
     }
 
-    public long getSecondNumber() {
+    public BigDecimal getSecondNumber() {
         return secondNumber;
     }
 
-    public void setSecondNumber(long secondNumber) {
+    public void setSecondNumber(BigDecimal secondNumber) {
         this.secondNumber = secondNumber;
     }
 
