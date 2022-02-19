@@ -20,5 +20,14 @@ Notas adicionales
 
 * El entregable debe compilar en una instalación de maven totalmente limpia, debe indicarse en un fichero README tanto los pasos necesarios para generar el jar final como para ejecutarlo (no hace falta mucho detalle).
 
-# Calculadora
-Microservicio de calculadora con operaciones de suma y resta.
+# Microservicio Calculadora
+Microservicio de calculadora con operaciones de suma y resta con swagger.
+Para poder probarlo con comodidad, importar el proyecto en un IDE y tras cargar las dependencias maven, arrancarlo.
+
+Se puede probar llamando directamente al swagger:
+localhost:8080/swagger-ui.html
+
+O se puede probar llamando a las url's de las operaciones (se añade también en el proyecto colección calculator.json con las llamadas):
+localhost:8080/operations/add
+localhost:8080/operations/subtract
+
