@@ -22,7 +22,7 @@ Notas adicionales
 
 # Microservicio Calculadora
 Microservicio de calculadora con operaciones de suma y resta con swagger.
-Para poder probarlo con comodidad, importar el proyecto en un IDE y tras cargar las dependencias maven, arrancarlo.
+Por algunos problemas al compilar con maven la librería añadida Trace, para poder probarlo con comodidad, importar el proyecto en un IDE y tras cargar las dependencias maven, arrancarlo.
 
 Se puede probar llamando directamente al swagger:
 localhost:8080/swagger-ui.html
